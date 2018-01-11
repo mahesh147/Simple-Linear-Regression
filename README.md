@@ -4,4 +4,4 @@ A simple python program that implements Linear Regression on a sample dataset. T
 
 Y_Pred stores the predicted values of X_Test
 
-A graph is plotted using the matplotlib.pyplot to visually represent the Linear Regressionmodel.
+A graph is plotted using the matplotlib.pyplot to visually represent the Linear Regression model.
