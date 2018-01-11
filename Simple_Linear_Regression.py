@@ -17,14 +17,6 @@ Y = datasets.iloc[:, 1].values
 from sklearn.model_selection import train_test_split
 X_Train, X_Test, Y_Train, Y_Test = train_test_split(X, Y, test_size = 1/3, random_state = 0)
 
-# Feature Scaling
-
-"""from sklearn.preprocessing import StandardScaler
-sc_X = StandardScaler()
-X_Train = sc_X.fit_transform(X_Train)
-X_Test = sc_X.transform(X_Test)
-"""
-
 # Fitting Simple Linear Regression to the training set
 
 from sklearn.linear_model import LinearRegression
@@ -53,26 +45,3 @@ plt.title('Salary vs Experience  (Training Set)')
 plt.xlabel('Years of experience')
 plt.ylabel('Salary')
 plt.show()
-    
-
-
-
-
-
-
-￼
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
