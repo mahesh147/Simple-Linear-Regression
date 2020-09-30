@@ -27,6 +27,10 @@ regressor.fit(X_Train, Y_Train)
 
 Y_Pred = regressor.predict(X_Test)
 
+# Showing accuracy of the model 
+
+acc = regressor.score(X_Test, Y_Test)
+print(acc)
 
 # Visualising the Training set results
 
