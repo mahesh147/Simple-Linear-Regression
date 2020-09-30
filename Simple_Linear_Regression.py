@@ -1,4 +1,4 @@
-# Simple Linear Regression
+# Simple Linear Regression from scratch without using sklearn or Tensorflow.
 # Importing the libraries
 
 import numpy as np
@@ -18,8 +18,8 @@ class Linear_regression:
 		self.train_labels = train_labels
 		self.new_train_data = np.insert(self.train_data,0,1,axis=1)		
 		self.weights = np.zeros((2,1))		
-		self.epochs = 1500
-		self.alpha = 0.01
+		self.epochs = 1500  # select epochs here
+		self.alpha = 0.01 #select your learning rate here.
 
 	def hypothesis(self):
 		return np.dot(self.new_train_data,self.weights)	
@@ -58,7 +58,7 @@ if __name__ == '__main__':
  
  # Reading data from csv file
  
-	data = pd.read_csv('ex1data1.txt')
+	data = pd.read_csv('Salary_Data.csv')
 	train_data = np.array(data.iloc[:,:1])
 	train_labels = np.array(data.iloc[:,1:])			
 
